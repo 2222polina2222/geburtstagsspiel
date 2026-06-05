@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geburtstags-Spiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="startScreen">
+    <h1>🎉 Happy Birthday! 🎉</h1>
+    <p>Fange Geschenke und erreiche 250 Punkte!</p>
+    <button id="startBtn">Spiel starten</button>
+</div>
+
+<div id="gameUI" class="hidden">
+    <div id="topBar">
+       <span>Punkte: <span id="score">0</span></span>
+       <span>Ziel: 800</span>
+       <span id="feedback"></span>
+       <span>Zeit: <span id="time">60</span>s</span>
+    </div>
+
+    <div id="gameArea">
+        <div id="basket">🧺</div>
+    </div>
+</div>
+
+<div id="endScreen" class="hidden">
+    <h1>🎉 Spiel beendet 🎉</h1>
+    <h2>Deine Punkte:</h2>
+    <h1 id="finalScore">0</h1>
+
+    <p id="message"></p>
+
+    <button onclick="location.reload()">Nochmal spielen</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

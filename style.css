@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(180deg,#ffd6e8,#fff5fa);
+    overflow:hidden;
+    text-align:center;
+}
+
+.hidden{
+    display:none;
+}
+
+#startScreen,
+#endScreen{
+    margin-top:100px;
+}
+
+button{
+    padding:15px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+#topBar{
+    display:flex;
+    justify-content:space-around;
+    padding:15px;
+    font-size:22px;
+    font-weight:bold;
+    background:white;
+}
+
+#gameArea{
+    position:relative;
+    width:100vw;
+    height:calc(100vh - 70px);
+    overflow:hidden;
+}
+
+#basket{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:60px;
+    user-select:none;
+}
+
+.item{
+    position:absolute;
+    font-size:40px;
+}
+#feedback{
+    min-width:120px;
+    font-weight:bold;
+}
+
+.positive{
+    color:green;
+}
+
+.negative{
+    color:red;
+}
+
+body {
+    touch-action: none;
+}
